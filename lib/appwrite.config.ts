@@ -12,7 +12,6 @@ export const {
 } = process.env;
 
 const client = new sdk.Client();
-console.log("ENV DEBUG →", { ENDPOINT, PROJECT_ID, API_KEY });
 
 if (typeof window !== "undefined") {
   throw new Error("Appwrite Client should not be initialized on the client side");
