@@ -144,7 +144,7 @@ const RegisterForm = ({ user }: { user: User }) => {
           />
         </div>
 
-        {/* creating address and occupation field */}
+        {/* creating emergencyContactName and emergencyContactNumber field */}
         <div className="flex flex-col gap-6 xl:flex-row">
           <CustomFormField
             control={form.control}
@@ -185,7 +185,7 @@ const RegisterForm = ({ user }: { user: User }) => {
                   width={32}
                   height={32}
                   alt={doctor.name}
-                  className="rounded-full border-dark-500"
+                  className="rounded-full border border-dark-500"
                 />
                 <p>{doctor.name}</p>
               </div>
