@@ -7,7 +7,7 @@ import { useDropzone } from "react-dropzone";
 
 type FileUploaderProps = {
   files: File[] | undefined;
-  onChange: (file: File[]) => void;
+  onChange: (files: File[]) => void;
 };
 
 const fileUploader = ({ files, onChange }: FileUploaderProps) => {

@@ -8,9 +8,10 @@ export default function Home({ searchParams }: SearchParamProps) {
 
   return (
     <div className="flex h-screen max-h-screen">
-      {/* TODO: OTP Verification | Passkey modal */}
-
+      {/* OTP Verification | Passkey modal */}
       {isAdmin && <PasskeyModel />}
+
+      
       <section className="container my-auto remove-scrollbar">
         <div className="sub-container max-w-[496px]">
           <Image
