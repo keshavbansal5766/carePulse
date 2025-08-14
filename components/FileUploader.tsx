@@ -25,7 +25,7 @@ const fileUploader = ({ files, onChange }: FileUploaderProps) => {
           width={1000}
           height={1000}
           className="max-h-[400px] overflow-hidden object-cover"
-          alt="upload image"
+          alt="uploaded image"
         />
       ) : (
         <>
@@ -40,7 +40,7 @@ const fileUploader = ({ files, onChange }: FileUploaderProps) => {
               <span className="text-green-500">Click to upload</span> or drag
               and drop
             </p>
-            <p>SVG, PNG, JPG or GIF ( max 800x400)</p>
+            <p>SVG, PNG, JPG or GIF (max 800x400)</p>
           </div>
         </>
       )}
