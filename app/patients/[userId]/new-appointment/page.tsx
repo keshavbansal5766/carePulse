@@ -8,6 +8,7 @@ const NewAppointment = async ({ params }: SearchParamProps) => {
   const { userId } = await params;
   const patient = await getPatient(userId);
 
+
   return (
     <div className="flex h-screen max-h-screen">
       <section className="container my-auto remove-scrollbar">
@@ -26,9 +27,7 @@ const NewAppointment = async ({ params }: SearchParamProps) => {
             patientId={patient?.$id}
           />
 
-          <p className="copyright mt-10 py-12">
-            © 2025 CarePulse
-          </p>
+          <p className="copyright mt-10 py-12">© 2025 CarePulse</p>
         </div>
       </section>
       <Image

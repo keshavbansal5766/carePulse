@@ -18,6 +18,7 @@ const Success = async ({ params, searchParams }: SearchParamProps) => {
   return (
     <div className="flex h-screen max-h-screen px-[5%]">
       <div className="success-img">
+        {/* logo */}
         <Link href="/">
           <Image
             src="/assets/icons/logo-full.svg"
@@ -27,6 +28,7 @@ const Success = async ({ params, searchParams }: SearchParamProps) => {
             className="h-10 w-fit"
           />
         </Link>
+        {/* gif and heading */}
         <section className="flex flex-col items-center">
           <Image
             src="/assets/gifs/success.gif"
@@ -40,7 +42,7 @@ const Success = async ({ params, searchParams }: SearchParamProps) => {
           </h2>
           <p>we will be in touch shortly to confirm.</p>
         </section>
-
+        {/* appointment details */}
         <section className="request-details">
           <p>Requested appointment details:</p>
 
@@ -65,7 +67,7 @@ const Success = async ({ params, searchParams }: SearchParamProps) => {
             <p>{formatDateTime(appointment.schedule).dateTime}</p>
           </div>
         </section>
-
+        {/* button for navigate to create new appointment */}
         <Button variant="outline" className="shad-primary-btn" asChild>
           <Link href={`/patients/${userId}/new-appointment`}>
             New Appointment
